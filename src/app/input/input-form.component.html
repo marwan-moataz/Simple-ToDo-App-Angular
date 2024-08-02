@@ -1,0 +1,19 @@
+<div class="container py-5 d-flex flex-column w-50 mt-5 gap-3">
+  <div class="mb-3 text-center">
+    <h2>Add your New Task</h2>
+    <input
+      type="text"
+      class="form-control py-3 px-4"
+      id="exampleFormControlInput1"
+      placeholder="Enter Something to do"
+      (input)="updateInput($event)"
+      [value]="todoAdd"
+    />
+  </div>
+  <button
+    class="btn btn-success px-5 py-2 w-30 align-self-center"
+    (click)="popUp()"
+  >
+    Add Task
+  </button>
+</div>

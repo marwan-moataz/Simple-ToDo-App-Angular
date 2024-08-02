@@ -1,0 +1,17 @@
+<h1 class="text-center">Your Tasks</h1>
+<div class="todo-list">
+  @for (item of todosArray; track $index) {
+  <div class="d-flex justify-content-between px-3 align-items-center">
+    <label class="todo">
+      <div class="todo-iput display fs-2 fw-light text-capitalize">
+        {{ item }}
+      </div>
+    </label>
+  </div>
+
+  }@empty {
+  <h2 class="display-6 text-center text-center">
+    You have finished your Tasks
+  </h2>
+  }
+</div>
